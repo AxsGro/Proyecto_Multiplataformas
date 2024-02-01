@@ -1,4 +1,5 @@
-import { config } from '@gluestack-ui/config';
+//import { config } from '@gluestack-ui/config';
+import { config } from "./config/gluestack-ui.config";
 import { Box, GluestackUIProvider, Text, Image, VStack, Heading, Link, Button } from '@gluestack-ui/themed';
 import { ScrollView } from 'react-native';
 import Gradient from './assets/Icons/Gradient';
@@ -35,7 +36,8 @@ function Card () {
     <Box>
       <Image
         h={150}
-         width="100%"
+        w={300}
+        borderColor='#fafaf9'
         source={{
           uri: 'https://images.unsplash.com/photo-1549888834-3ec93abae044?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
         }}        
@@ -56,7 +58,7 @@ function Card () {
       Vitamin C also helps with the absorption of iron and the production of collagen, which supports healthy skin, teeth, and bones.
       </Text>   
       <Link href="https://gluestack.io/" isExternal>
-        <Button fontSize='$sm' color='$pink600'>
+        <Button fontSize='$sm' color='#fafaf9'>
         Find out more
         </Button>
       </Link>
