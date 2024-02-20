@@ -7,11 +7,12 @@ import DocumentData from './assets/Icons/DocumentData';
 import LightBulbPerson from './assets/Icons/LightbulbPerson';
 import Rocket from './assets/Icons/Rocket';
 import Logo from './assets/Icons/Logo';
+import BackGround_blue from './components/BackGround_blue';
 
 export default function App() {
   return (
     <GluestackUIProvider config={config}>
-      <Card />
+      <BackGround_blue />
     </GluestackUIProvider>
   );
 }
